@@ -7,7 +7,8 @@ var colors = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 onready var Map = $TileMap
 
 func _ready():
-	var height_map = load_file("res://assets/Day12_TestData.tres")
+#	var height_map = load_file("res://assets/Day12_TestData.tres")
+	var height_map = load_file("res://assets/Day12_InputData.tres")
 	make_height_map(height_map)
 
 
