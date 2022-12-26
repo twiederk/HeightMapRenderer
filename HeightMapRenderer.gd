@@ -1,4 +1,6 @@
+class_name HeighMapRenderer
 extends Node2D
+
 
 #aabqponm
 #abcryxxl
@@ -22,12 +24,12 @@ func _ready():
 	make_height_map()
 
 
-func make_height_map():
+func make_height_map() -> void:
 	Map.clear()
 	for row in range(height_map.size()):
 		for col in range(height_map[0].length()):
 			var height: int = get_height(height_map[row].ord_at(col))
-			var scaled_height = height / 2
+			var scaled_height : int = height / 2
 			Map.set_cellv(Vector2(col, row), colors[scaled_height])
 
 

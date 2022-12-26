@@ -8,10 +8,20 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Node2D",
+"class": "HeighMapRenderer",
+"language": "GDScript",
+"path": "res://HeightMapRenderer.gd"
+} ]
+_global_script_class_icons={
+"HeighMapRenderer": ""
+}
+
 [application]
 
 config/name="HeightMapRenderer"
-run/main_scene="res://World.tscn"
+run/main_scene="res://HeightMapRenderer.tscn"
 config/icon="res://icon.png"
 
 [gui]
